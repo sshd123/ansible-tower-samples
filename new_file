@@ -1,0 +1,7 @@
+- name: create new file Sample
+  hosts: all
+  tasks:
+    - name: create tmp.txt
+      file:
+        path: "/tmp/tmp.txt"
+        state: touch
